@@ -29,7 +29,7 @@ hr {
 }
 
 main:hover {
-    cursor: pointer;
+    cursor: grab;
 }
 
 main:hover h3 {
@@ -41,12 +41,26 @@ main:hover h3 {
     flex-direction: column;
 }
 
-.hide {
+.hide-img {
     opacity: 0;
     width: 0%;
 }
 
-.show {
+.show-img {
     opacity: 1;
     width: 50%;
+    margin-bottom: 16px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign {
+    font-size: 32px;
 }
