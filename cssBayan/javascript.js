@@ -1,5 +1,6 @@
-let targetImg = 0;
+let targetImg = 1;
 const texts = document.querySelectorAll('.text');
+
 texts.forEach(text => {
     text.addEventListener('mouseover', showImage);
 });
@@ -10,6 +11,9 @@ function showImage(e) {
     const img = text.nextElementSibling;
     const sign = text.firstElementChild;
     const currentTargetImg = img.getAttribute("key");
+    console.log(text);
+    console.log(img);
+    console.log(sign);
 
     if (currentTargetImg !== targetImg) {
         sign.classList.remove('hidden');
@@ -17,6 +21,7 @@ function showImage(e) {
 
         img.classList.remove('hide-img');
         img.classList.add('show-img');
+        console.log(img);
     }
     
     popup.onmouseup = () => {
@@ -107,3 +112,19 @@ window.addEventListener('resize', () => {
         main.style.width = "80%";
     } 
 });
+
+window.onload = () => {
+    const text = texts[0];
+    const img = text.nextElementSibling;
+    const sign = text.firstElementChild;
+
+    sign.classList.remove('hidden');
+    sign.textContent = '×';
+
+    img.classList.remove('hide-img');
+    img.classList.add('show-img');
+    
+    text.style.color = "#000";
+    
+    targetImg = img.getAttribute("key");
+};
