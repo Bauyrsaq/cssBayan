@@ -1,7 +1,7 @@
 img {
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
+    transition: all 1s ease;
 }
 
 main {
@@ -12,6 +12,8 @@ main {
 
 h1, h3 {
     font-weight: 1000;
+    margin: 0;
+    padding: 16px;
 }
 
 h1 {
@@ -20,6 +22,10 @@ h1 {
 
 h3 {
     color: #00f;
+}
+
+hr {
+    margin: 0;
 }
 
 main:hover {
@@ -36,5 +42,11 @@ main:hover h3 {
 }
 
 .hide {
-    display: none;
+    opacity: 0;
+    width: 0%;
+}
+
+.show {
+    opacity: 1;
+    width: 50%;
 }
