@@ -1,0 +1,40 @@
+img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h3 {
+    font-weight: 1000;
+}
+
+h1 {
+    color: #000;
+}
+
+h3 {
+    color: #00f;
+}
+
+main:hover {
+    cursor: pointer;
+}
+
+main:hover h3 {
+    color: #000;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
