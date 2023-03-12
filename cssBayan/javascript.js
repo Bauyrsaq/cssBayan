@@ -97,3 +97,11 @@ main.onmousedown = () => {
 main.onmouseup = () => {
     main.style.cursor = "grab";
 };
+
+window.addEventListener('resize', () => {
+    let width = window.innerWidth;
+    if (width <= 1000) {
+        const main = document.querySelector('main');
+        main.style.width = "80%";
+    } 
+});
