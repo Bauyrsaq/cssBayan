@@ -87,6 +87,8 @@ main.onmouseleave = () => {
                 text.style.color = "#00f";
             }
         });
+    } else {
+        texts.forEach(text => text.style.color = "#00f");
     }
 }
 
